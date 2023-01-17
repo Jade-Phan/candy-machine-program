@@ -1,14 +1,14 @@
 [features]
 seeds = false
 skip-lint = false
-[programs.testnet]
+[programs.devnet]
 candy_machine_program = "2KXJgDqYECfjKKGqErJRsfTvT7NAMFqZEELmVpPNS42q"
 
 [registry]
 url = "https://api.apr.dev"
 
 [provider]
-cluster = "testnet"
+cluster = "devnet"
 wallet = "/home/demo/.config/solana/id.json"
 
 [scripts]

@@ -673,6 +673,7 @@ pub fn handle_mint_nft<'info>(
         let (expected_freeze_key, freeze_bump) = Pubkey::find_program_address(seeds, &crate::id());
         assert_keys_equal(&expected_freeze_key, &freeze_pda.key())?;
         // redundant check
+
         freeze_pda.assert_from_candy(&candy_pubkey)?;
 
         freeze_pda.frozen_count += 1;
